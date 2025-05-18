@@ -1,4 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-echo "Husky: Pre-commit checks passed!"  # Remove later
-exit 0 # Force success
