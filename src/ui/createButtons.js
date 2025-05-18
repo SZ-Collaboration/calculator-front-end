@@ -1,5 +1,5 @@
-export function createButtons() {
-  const buttonsContext = [
+export class createButtons {
+  buttonsContext = [
     "0",
     "1",
     "2",
@@ -18,11 +18,13 @@ export function createButtons() {
     "=",
     "C",
   ];
-  const buttons = [];
-  for (let x = 0; x < buttonsContext.length; x++) {
-    buttons[x] = document.createElement("button");
-    buttons[x].textContent = buttonsContext[x];
-    buttons[x].className = "buttons";
-    document.body.appendChild(buttons[x]);
+  buttons = [];
+
+  constructor() {
+    for (let x = 0; x < this.buttonsContext.length; x++) {
+      this.buttons[x] = document.createElement("button");
+      this.buttons[x].textContent = this.buttonsContext[x];
+      this.buttons[x].className = "buttons";
+    }
   }
 }
