@@ -1,31 +1,60 @@
-.buttons {
-  cursor: pointer;
-  border: none;
-  user-select: none;
-  outline: none;
-
-  color: #ffffff;
-  background-color: rgb(94, 97, 96);
-
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 30px;
+body,
+html {
+  margin: 0;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #444444;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
-  user-select: none;
-  outline: none;
-
-  background-color: hsl(0, 3%, 25%);
-
-  padding: 20px;
-  width: 450px;
+  gap: 10px;
+  background-color: #1a1a1a;
+  padding: 15px;
+  width: 90%;
+  max-width: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin: 0 auto;
-  margin-top: 250px;
-  gap: 15px;
 }
+
 .display {
-  color: aqua;
+  width: 90%;
+  max-width: 400px;
+  height: 120px;
+  background-color: #000000;
+  color: white;
+  font-size: 36px;
+  text-align: right;
+  padding: 15px;
+  margin: 0 auto;
+  border: none;
+  user-select: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  caret-color: transparent;
+  outline: none;
+}
+
+.buttons {
+  cursor: pointer;
+  border: none;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  font-size: 24px;
+  background-color: #333333;
+  color: white;
+  user-select: none;
+}
+
+.buttons:hover {
+  background-color: #4a4a4a;
 }

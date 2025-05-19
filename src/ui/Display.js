@@ -1,5 +1,5 @@
 //CREATES A BOX WHERE NUMBERS AND OPERATORS SHOULD APPEAR
-export class CreateDisplay {
+export class createDisplay {
   display = document.createElement("input");
   constructor() {
     this.display.className = "display";
