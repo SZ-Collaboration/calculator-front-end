@@ -20,6 +20,7 @@ export class createButtons {
   ];
   buttons = [];
 
+  //TO CREATE BUTTONS, MAKE BUTTONS SHOW CONTENT AND MAKE IT ACCESIBLE TO CSS
   constructor() {
     for (let x = 0; x < this.buttonsContext.length; x++) {
       this.buttons[x] = document.createElement("button");
