@@ -1,6 +1,6 @@
 export class CreateDisplay {
+  display = document.createElement("input");
   constructor() {
-    this.display = document.createElement("input");
     this.display.className = "display";
   }
 }
