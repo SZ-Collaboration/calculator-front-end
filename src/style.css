@@ -1,7 +1,28 @@
 .buttons {
-  color: brown;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  outline: none;
+
+  color: #ffffff;
+  background-color: rgb(94, 97, 96);
+
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 30px;
 }
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  user-select: none;
+  outline: none;
+
+  background-color: hsl(0, 3%, 25%);
+
+  padding: 20px;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 250px;
+  gap: 15px;
 }
