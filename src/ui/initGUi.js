@@ -18,4 +18,13 @@ export function initGUI() {
   for (let x = 0; x < buttons.length; x++) {
     bContainer.appendChild(buttons[x]);
   }
+
+  let currentValue = "";
+
+  for (let x = 0; x < buttons.length; x++) {
+    buttons[x].addEventListener("click", () => {
+      currentValue += buttons[x].textContent;
+      display.value = currentValue;
+    });
+  }
 }
