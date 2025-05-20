@@ -8,8 +8,12 @@ export function processInput(buttonValue) {
   } else if (buttonValue === "DEL") {
     currentValue = currentValue.slice(0, -1);
   } else if (buttonValue === "=") {
-    currentValue = eval(currentValue).toString();
     //ADDS THE BUTTON CLICKED TO CURRENT VALUE
+    try {
+      currentValue = eval(currentValue).toString();
+    } catch {
+      currentValue = "Error";
+    }
   } else {
     currentValue += buttonValue;
   }
