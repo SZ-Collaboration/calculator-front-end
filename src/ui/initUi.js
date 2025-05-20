@@ -1,20 +1,19 @@
-import { createButtons } from "./Buttons";
-import { createContainer } from "./ButtonContainer";
-import { createApp } from "./AppContainer";
-import { createDisplay } from "./Display";
+import { createButtons } from "./createButtons";
+import { createBContainer } from "./createBContainer";
+import { createAppContainer } from "./createAppContainer";
+import { createDisplay } from "./createDisplay";
 
-//TOFIX : NAME THE OBJECTS BETTER
-let obj1 = new createButtons();
-let obj2 = new createContainer();
-let obj3 = new createApp();
-let obj4 = new createDisplay();
+const buttons = createButtons();
+const bContainer = createBContainer();
+const appContainer = createAppContainer();
+const display = createDisplay();
 
 //TO ADD APPCONT TO HTML, ADD DISPLAY AND BUTTONCONT TO APPCONT, ADD BUTTONS TO BUTTONCONT
 export function initUI() {
-  document.body.appendChild(obj3.app);
-  obj3.app.appendChild(obj4.display);
-  obj3.app.appendChild(obj2.container);
-  for (let x = 0; x < obj1.buttonsContext.length; x++) {
-    obj2.container.appendChild(obj1.buttons[x]);
+  document.body.appendChild(appContainer);
+  appContainer.appendChild(display);
+  appContainer.appendChild(bContainer);
+  for (let x = 0; x < buttons.length; x++) {
+    bContainer.appendChild(buttons[x]);
   }
 }
