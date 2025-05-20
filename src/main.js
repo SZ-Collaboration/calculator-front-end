@@ -1,4 +1,4 @@
-import { initUI } from "./ui/initUi";
+import { initGUI } from "./ui/initGUi";
 import "./style.css";
 
-initUI();
+initGUI();
