@@ -1,7 +1,9 @@
-import { createButtons } from "./createButtons";
-import { createBContainer } from "./createBContainer";
-import { createAppContainer } from "./createAppContainer";
-import { createDisplay } from "./createDisplay";
+import {
+  createAppContainer,
+  createBContainer,
+  createButtons,
+  createDisplay,
+} from "./UIElements";
 
 const buttons = createButtons();
 const bContainer = createBContainer();
