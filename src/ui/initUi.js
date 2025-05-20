@@ -40,3 +40,8 @@ export function initUI() {
   initGUI();
   InputHandler();
 }
+
+//RETURNS DISPLAY
+export function returnDisplay() {
+  return display;
+}
