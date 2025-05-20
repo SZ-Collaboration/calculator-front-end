@@ -5,10 +5,10 @@ import {
   createDisplay,
 } from "./UIElements";
 
-const buttons = createButtons();
+export const buttons = createButtons();
 const bContainer = createBContainer();
 const appContainer = createAppContainer();
-const display = createDisplay();
+export const display = createDisplay();
 
 //TO ADD APPCONT TO HTML, ADD DISPLAY AND BUTTONCONT TO APPCONT, ADD BUTTONS TO BUTTONCONT
 export function initGUI() {
@@ -17,14 +17,5 @@ export function initGUI() {
   appContainer.appendChild(bContainer);
   for (let x = 0; x < buttons.length; x++) {
     bContainer.appendChild(buttons[x]);
-  }
-
-  let currentValue = "";
-
-  for (let x = 0; x < buttons.length; x++) {
-    buttons[x].addEventListener("click", () => {
-      currentValue += buttons[x].textContent;
-      display.value = currentValue;
-    });
   }
 }
