@@ -1,20 +1,23 @@
 import { buttons, display } from "../ui/GUI";
 
-export function eventHandler() {
-  let currentValue = "";
+let value = "";
 
+//ADDS EVENTLISTENER TO BUTTONS
+export function eventHandler() {
   for (let x = 0; x < buttons.length; x++) {
     buttons[x].addEventListener("click", () => {
-      currentValue += buttons[x].textContent;
+      const currentValue = buttons[x].textContent;
 
-      if (currentValue.includes("DEL")) {
-        currentValue = "";
-        display.value = currentValue;
+      if (currentValue === "C") {
+        //DELETES THE WHOLE DISPLAY
+        value = "";
+      } else if (currentValue === "DEL") {
+        //DELETES ONLY ONE OF THE VALUES
+        value = value.slice(0, -1);
       } else {
-        display.value = currentValue;
+        value += currentValue;
       }
-
-      console.log(currentValue);
+      display.value = value;
     });
   }
 }

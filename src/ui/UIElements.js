@@ -17,6 +17,7 @@ export function createButtons() {
     "0",
     "=",
     "+",
+    "C",
   ];
 
   const buttons = [];
