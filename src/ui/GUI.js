@@ -3,7 +3,7 @@ import {
   createBContainer,
   createButtons,
   createDisplay,
-} from "./UIElements";
+} from "./GUIElements";
 
 export const buttons = createButtons();
 const bContainer = createBContainer();
