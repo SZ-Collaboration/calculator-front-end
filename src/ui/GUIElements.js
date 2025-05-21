@@ -13,11 +13,10 @@ export function createButtons() {
     "2",
     "3",
     "-",
-    "DEL",
+    "⌫",
     "0",
     "=",
     "+",
-    "C",
   ];
 
   const buttons = [];

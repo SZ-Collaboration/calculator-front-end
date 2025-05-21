@@ -15,7 +15,7 @@ html {
 .Bcontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 5px;
   background-color: #1a1a1a;
   padding: 15px;
   width: 90%;
@@ -53,6 +53,7 @@ html {
   background-color: #333333;
   color: white;
   user-select: none;
+  gap: 0px;
 }
 
 .buttons:hover {

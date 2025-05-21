@@ -1,11 +1,8 @@
 let currentValue = "";
 
 export function processInput(buttonValue) {
-  //DELETES THE WHOLE DISPLAY
-  if (buttonValue === "C") {
-    currentValue = "";
-    //DELETES THE LAST VALUE ON THE DISPLAY
-  } else if (buttonValue === "DEL") {
+  //REMOVES THE LAST VALUE ON DISPLAY
+  if (buttonValue === "⌫") {
     currentValue = currentValue.slice(0, -1);
   } else if (buttonValue === "=") {
     //ADDS THE BUTTON CLICKED TO CURRENT VALUE
