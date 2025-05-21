@@ -52,6 +52,7 @@ export function createBContainer() {
 export function createDisplay() {
   const display = document.createElement("input");
   display.className = "display";
+  display.readOnly = true;
 
   return display;
 }
