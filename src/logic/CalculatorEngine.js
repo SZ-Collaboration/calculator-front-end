@@ -3,7 +3,7 @@ let currentValue = "";
 // RETURN TRUE IF THE BUTTON VALUE IS VALID
 export function isValid(buttonValue) {
   if (
-    isEmpty() === true &&
+    hasNumber() === false &&
     (buttonValue === "*" || buttonValue === "/" || buttonValue === "=")
   ) {
     return false;
@@ -12,10 +12,10 @@ export function isValid(buttonValue) {
   }
 }
 
-function isEmpty() {
-  if (currentValue === "") {
+function hasNumber() {
+  if (currentValue.includes(Number)) {
     return true;
-  }
+  } else return false;
 }
 
 export function processInput(buttonValue) {
