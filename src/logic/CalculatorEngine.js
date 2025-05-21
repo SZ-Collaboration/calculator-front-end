@@ -1,6 +1,28 @@
 let currentValue = "";
 
+// RETURN TRUE IF THE BUTTON VALUE IS VALID
+export function isValid(buttonValue) {
+  if (
+    isEmpty() === true &&
+    (buttonValue === "*" || buttonValue === "/" || buttonValue === "=")
+  ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function isEmpty() {
+  if (currentValue === "") {
+    return true;
+  }
+}
+
 export function processInput(buttonValue) {
+  // IF IT IS NOT A VALID INPUT IT RETURNS EMPTY STRING
+  if (!isValid(buttonValue)) {
+    return currentValue;
+  }
   //REMOVES THE LAST VALUE ON DISPLAY
   if (buttonValue === "⌫") {
     currentValue = currentValue.slice(0, -1);
