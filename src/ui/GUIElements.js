@@ -4,11 +4,11 @@ export function createButtons() {
     "7",
     "8",
     "9",
-    "/",
+    "÷",
     "4",
     "5",
     "6",
-    "*",
+    "×",
     "1",
     "2",
     "3",
@@ -26,6 +26,17 @@ export function createButtons() {
     buttons[x].className = "buttons";
   }
 
+  for (let x = 0; x < buttonsContext.length; x++) {
+    if (x != 3 && x != 7) {
+      buttons[x].value = buttonsContext[x];
+    }
+    if (x === 3) {
+      buttons[x].value = "/";
+    }
+    if (x === 7) {
+      buttons[x].value = "*";
+    }
+  }
   return buttons;
 }
 
