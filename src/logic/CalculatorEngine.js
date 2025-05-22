@@ -13,9 +13,7 @@ export function isValid(buttonValue) {
 }
 
 function hasNumber() {
-  if (currentValue.includes(Number)) {
-    return true;
-  } else return false;
+  return /[0-9]/.test(currentValue);
 }
 
 export function processInput(buttonValue) {
