@@ -17,13 +17,8 @@ export function isValid(buttonValue) {
 }
 
 //RETURNS IF PREVIOUS VALUE AND CURRENT VALUE HAVE OPERATORS
-//THIS ALLOWS MULTIPLE "-", NEED TO FIX THAT
 function hasOperator(buttonValue) {
-  if (
-    operator.includes(previousValue) &&
-    operator.includes(buttonValue) &&
-    buttonValue != "-"
-  ) {
+  if (operator.includes(previousValue) && operator.includes(buttonValue)) {
     return true;
   } else {
     return false;
