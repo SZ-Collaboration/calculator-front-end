@@ -1,4 +1,4 @@
-//CREATE BUTTONS
+//CREATE BUTTON
 export function createButtons() {
   const buttonsContext = [
     "7",
