@@ -8,7 +8,7 @@ export function createButtons() {
     "4",
     "5",
     "6",
-    "×",
+    "x",
     "1",
     "2",
     "3",
