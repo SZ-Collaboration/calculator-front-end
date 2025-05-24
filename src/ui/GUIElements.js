@@ -15,8 +15,12 @@ export function createButtons() {
     "-",
     "⌫",
     "0",
-    "=",
+    ".",
     "+",
+    "AC",
+    "(",
+    ")",
+    "=",
   ];
 
   const buttons = [];

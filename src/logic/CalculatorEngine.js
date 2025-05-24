@@ -31,6 +31,11 @@ function hasNumber() {
 }
 
 export function processInput(buttonValue) {
+  if (buttonValue === "AC") {
+    currentValue = "";
+    previousValue = "";
+    return currentValue;
+  }
   // IF IT IS NOT A VALID INPUT IT RETURNS EMPTY STRING
   if (!isValid(buttonValue)) {
     previousValue = currentValue.slice(-1);
